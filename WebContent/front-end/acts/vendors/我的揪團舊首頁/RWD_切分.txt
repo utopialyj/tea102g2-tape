@@ -1,0 +1,82 @@
+
+	<div class="container mt-3 ">
+		<!-- Content here -->
+		<div class="row">
+
+
+			<div class="col-2 box1">
+				<div class="alert alert-success " role="alert"
+					style="background-color: rgb(162, 195, 255);">
+					<!--           <h4 class="alert-heading">Well done!</h4> -->
+					<div class="alert alert-primary" role="alert" align="center">
+						<a href="#" class="alert-link">發起活動</a>
+					</div>
+
+					<div class="alert alert-primary" role="alert"
+						style="text-align: center;">
+						<a href="#" class="alert-link">活動預覽</a>
+					</div>
+					<div class="alert alert-primary" role="alert"
+						style="text-align: center;">
+						<a href="#" class="alert-link">活動管理</a>
+					</div>
+					<div class="alert alert-primary" role="alert"
+						style="text-align: center;">
+						<a href="#" class="alert-link">揪團</a>
+					</div>
+					<div class="alert alert-primary" role="alert"
+						style="text-align: center;">
+						<a href="#" class="alert-link">活動報名/檢舉/收藏</a>
+					</div>
+				</div>
+			</div>
+			<!-- 左側 col-2 -->
+
+
+			<!--    中央  col-8  -->
+			<div class="col-8 box2">
+
+				<!-- class="form-inline" -->
+				<!-- 搜尋框 -->
+				<form method="post">
+					<label class="my-1 mr-2" for="inlineFormCustomSelectPref">搜尋活動偏好</label>
+					<select class="custom-select my-1 mr-sm-2"
+						id="inlineFormCustomSelectPref">
+						<option selected>Choose...</option>
+						<option value="1">電影</option>
+						<option value="2">吃飯</option>
+						<option value="3">爬山</option>
+						<option value="4">打球</option>
+						<option value="5">逛街</option>
+						<option value="6">公益</option>
+					</select> <label for="f_date1">起算時間</label> <input name="time1" id="f_date1"
+						type="text"> <label for="f_date2">結束時間</label> <input
+						name="time2" id="f_date2" type="text">
+
+					<!-- 					<div class="custom-control custom-checkbox my-1 mr-sm-2"> -->
+					<!-- 						<input type="checkbox" class="custom-control-input" -->
+					<!-- 							id="customControlInline"> <label -->
+					<!-- 							class="custom-control-label" for="customControlInline">記住我的偏好</label> -->
+					<!-- 					</div> -->
+
+					<button type="submit" class="btn btn-primary my-1">Submit</button>
+				</form>
+
+		
+
+				<div class="row row-cols-1 row-cols-md-3">
+					<div class="col mb-4">
+						
+				</div>
+
+			</div>
+			<!-- 中央 col-8 -->
+
+
+			<!-- 右側 col-2 -->
+			<div class="col-2 box3"></div>
+			<!-- 右側 col-2-->
+		</div>
+		<!-- row_end -->
+	</div>
+	<!-- container mt-3 _end -->

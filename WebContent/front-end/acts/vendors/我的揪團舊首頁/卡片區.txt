@@ -1,0 +1,81 @@
+<div class="card h-100">
+							<img src="images/kali.jpg" class="card-img-top"
+								alt="images/kali.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text"><a href="#" title="測試超連結"><img src="圖片網址" alt="大頭貼" border="0"></a><br>This is a longer card with supporting
+									text below as a natural lead-in to additional content. This
+									content is a little bit longer.</p>
+							</div>
+							<div class="btn-group">
+								<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+							</div>
+						</div>
+					</div>
+					<div class="col mb-4">
+						<div class="card h-100">
+							<img src="images/kali.jpg" class="card-img-top"
+								alt="images/kali.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text"><a href="#" title="測試超連結"><img src="圖片網址" alt="大頭貼" border="0"></a><br>This is a short card.</p>
+							</div>
+							<div class="btn-group">
+								<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+							</div>
+
+						</div>
+					</div>
+					<div class="col mb-4">
+						<div class="card h-100">
+							<img src="images/kali.jpg" class="card-img-top"
+								alt="images/kali.jpg">
+							<div class="card-body">
+								<h5 class="card-title">Card title</h5>
+								<p class="card-text">This is a longer card with supporting
+									text below as a natural lead-in to additional content.</p>
+							</div>
+							<div class="btn-group">
+								<button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+								<button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+							</div>
+						</div>
+					</div>
+					<!-- 									<div class="col mb-4"> -->
+					<!-- 										<div class="card h-100"> -->
+					<!-- 											<img src="images/kali.jpg" class="card-img-top" -->
+					<!-- 												alt="images/kali.jpg"> -->
+					<!-- 											<div class="card-body"> -->
+					<!-- 												<h5 class="card-title">Card title</h5> -->
+					<!-- 												<p class="card-text">This is a longer card with supporting -->
+					<!-- 													text below as a natural lead-in to additional content. This -->
+					<!-- 													content is a little bit longer.</p> -->
+					<!-- 											</div> -->
+					<!-- 										</div> -->
+					<!-- 									</div> -->
+					<!-- 					<div class="col mb-4"> -->
+					<!-- 						<div class="card h-100"> -->
+					<!-- 							<img src="images/kali.jpg" class="card-img-top" -->
+					<!-- 								alt="images/kali.jpg"> -->
+					<!-- 							<div class="card-body"> -->
+					<!-- 								<h5 class="card-title">Card title</h5> -->
+					<!-- 								<p class="card-text">This is a longer card with supporting -->
+					<!-- 									text below as a natural lead-in to additional content. This -->
+					<!-- 									content is a little bit longer.</p> -->
+					<!-- 							</div> -->
+					<!-- 						</div> -->
+					<!-- 					</div> -->
+					<!-- 					<div class="col mb-4"> -->
+					<!-- 						<div class="card h-100"> -->
+					<!-- 							<img src="images/kali.jpg" class="card-img-top" -->
+					<!-- 								alt="images/kali.jpg"> -->
+					<!-- 							<div class="card-body"> -->
+					<!-- 								<h5 class="card-title">Card title</h5> -->
+					<!-- 								<p class="card-text">This is a longer card with supporting -->
+					<!-- 									text below as a natural lead-in to additional content. This -->
+					<!-- 									content is a little bit longer.</p> -->
+					<!-- 							</div> -->
+					<!-- 						</div> -->
+					<!-- 					</div> -->

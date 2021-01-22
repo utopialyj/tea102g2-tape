@@ -1,0 +1,48 @@
+<%
+	java.sql.Timestamp time = null;
+	try {
+		// 	   time = new java.sql.Timestamp(System.currentTimeMillis());
+		time = actsVO.getTime();
+	} catch (Exception e) {
+		time = new java.sql.Timestamp(System.currentTimeMillis());
+	}
+%>
+
+
+
+<link rel="stylesheet" type="text/css"
+	href="<%=request.getContextPath()%>/datetimepicker/jquery.datetimepicker.css" />
+<script src="<%=request.getContextPath()%>/datetimepicker/jquery.js"></script>
+<script
+	src="<%=request.getContextPath()%>/datetimepicker/jquery.datetimepicker.full.js"></script>
+
+<style>
+.xdsoft_datetimepicker .xdsoft_datepicker {
+	width: 300px; /* width:  300px; */
+}
+
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
+	height: 151px; /* height:  151px; */
+}
+</style>
+
+
+<script>
+	         $.datetimepicker.setLocale('zh'); 
+	         $('#f_date1').datetimepicker({
+	 	       theme: '',              //theme: 'dark', 
+	 	       timepicker:true,       //timepicker:true, 
+	 	       step: 1,                //step: 60 (這是timepicker的預設間隔60分鐘) 
+	 	       format:'Y-m-d H:i',         //format:'Y-m-d H:i:s', 
+			   value: '<%=time%>'
+	 		}); 
+
+	         $('#f_date2').datetimepicker({
+	  	       theme: '',              //theme: 'dark',
+	 	       timepicker:true,       //timepicker:true,
+	  	       step: 1,                //step: 60 (這是timepicker的預設間隔60分鐘)
+	  	       format:'Y-m-d H:i',         //format:'Y-m-d H:i:s',
+	 		   value: '<%=time%>'
+	
+	});
+</script>

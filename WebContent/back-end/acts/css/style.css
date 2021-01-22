@@ -1,0 +1,17 @@
+.box1{
+  height: 800px;
+  background-color: aqua;
+  border: 1px solid white;
+}
+
+.box2{
+  height: 800px;
+  background-color:green;
+  border: 1px solid white;
+}
+
+.box3{
+  height: 800px;
+  background-color:red;
+  border: 1px solid white;
+}

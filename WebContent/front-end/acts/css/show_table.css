@@ -1,0 +1,24 @@
+/* 隱藏表格過長的欄位 */
+ th,td {
+   white-space:nowrap;overflow:hidden;
+   text-overflow:ellipsis;
+   text-align:center !important;
+   border:solid 1px red;
+  }
+ td.maxwidth{
+max-width: 180px;
+}
+td.Pic{ 
+ 	white-space:normal; 
+ } 
+ 
+ td.cursor{
+ 	cursor:pointer;
+ }
+ 
+ 
+/* a:hover 遊標移動到超連結 */
+td.maxwidth a:hover{
+ 	text-decoration: none;
+ }
+ 

@@ -1,0 +1,33 @@
+body {
+/*   min-height: 75rem; */
+  padding-bottom: 100px;
+  padding-top: 4.5rem;
+}
+
+nav ul {
+  list-style: none; 
+  margin:0; 
+  padding: 0;
+}
+
+.userAndNotify {
+  float: left;
+}
+
+.userAndNotify > a {
+  color: white;
+  padding: 8px;
+}
+
+.no-arrow .dropdown-toggle::after {
+  display: none
+}
+
+.displayNone {
+	display: none;
+}
+
+img{
+	max-width: 100%;
+	object-fit: cover;
+}

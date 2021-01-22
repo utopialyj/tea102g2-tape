@@ -1,0 +1,40 @@
+div.overlay{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, .5);
+  
+  /* 預設：完全透明；設定 z-index: -1 會在整個頁面的後方，看不到，才不會擋到頁面元素。 */
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0s;
+}
+div.overlay.-on{
+  
+  /* 加上 -on 之後，Modal 漸漸出現，因為有設定 transition */
+  opacity: 1;
+  z-index: 1;
+}
+
+div.overlay.-opacity-zero{
+  /* 關閉 Modal 時，先讓 opacity設定0，就會慢慢變成完全透明，但這時會擋到後面的元素，所以要再移除 -on 及 -opacity-zero 這兩個 class */
+  opacity: 0;
+}
+
+/* 元素 article 置中及基本樣式 */
+div.overlay > article{
+  background-color: white;
+  width: 75%;
+  max-width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y:scroll;
+   height:75%; 
+}

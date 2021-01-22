@@ -1,0 +1,114 @@
+.box1{
+  
+  border: 1px solid white;
+}
+
+.box2{
+
+  border: 1px solid white;
+}
+
+.box3{
+
+  border: 1px solid white;
+  margin-right: auto;
+}
+
+
+.friend-box{
+  margin: 15px auto 0;
+  background-color: #b4e0ff5c;
+  width: 100%;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgb(119, 120, 160);
+	height: 130px;
+}
+
+.memberleft{
+  float: left;
+
+  height: 100px;
+  width: 100px;
+
+margin-left: 3%;
+margin-top: 3%;
+}
+.head {
+  width:70px;
+	height:70px;
+  
+}
+.imghead {
+  width:70px;
+	height:70px;
+  
+  }
+
+.membermid{
+margin-left: 18%;
+width: 70%;
+height: 90%;
+
+}
+
+.membermid > div{
+  
+width: 100%;
+height: 100%;
+
+}
+
+.word{
+
+  word-break: break-all;
+  box-shadow: 0.1px 0.5px 3px rgb(119, 120, 160);
+   
+  position: relative;
+  top: 5px;
+  
+}
+
+.membertop{
+  height: 40px;
+  
+}
+
+.memberfoot{
+  height: 40px;
+  
+}
+
+.memberright{
+  float: right;
+  height: 100px;
+  width: 60px;
+  margin-top: 4%;
+  margin-right: 0.8%;
+}
+.invitationBtn{
+
+}
+
+.ignoreBtn{
+  
+}
+.second{
+	width:70px;
+	height:70px;
+}
+
+.rounded-circle{
+	
+border: 2px solid #7e7e7e;
+}
+
+.membername{
+	margin-left: 2%;
+	text-align: center;
+}
+
+
+
+
+
+

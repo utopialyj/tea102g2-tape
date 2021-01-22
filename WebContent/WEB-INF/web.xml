@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>TEA102G2</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+
+
+
+	<servlet>
+		<servlet-name>PostServlet</servlet-name>
+		<servlet-class>com.post.controller.PostServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PostServlet</servlet-name>
+		<url-pattern>/back-end/post/post</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Black_ListServlet</servlet-name>
+		<servlet-class>com.black_list.controller.Black_ListServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>com.black_list.controller.Black_ListServlet</servlet-name>
+		<url-pattern>/front-end/Black_List/black_list.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+	<servlet-name>Member_HobbyServlet</servlet-name>
+	<servlet-class>com.member_hobby.controller.Member_HobbyServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>com.member_hobby.controller.Member_HobbyServlet</servlet-name>
+		<url-pattern>/front-end/Match/Member_Hobby/member_Hobby.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RelationshipServlet</servlet-name>
+		<servlet-class>com.relationship.controller.RelationshipServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>com.relationship.controller.RelationshipServlet</servlet-name>
+		<url-pattern>/front-end/Relationship/relationship.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Hobby_ListServlet</servlet-name>
+		<servlet-class>com.hobby_list.controller.Hobby_ListServlet</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>com.hobby_list.controller.Hobby_ListServlet</servlet-name>
+		<url-pattern>/front-end/Hobby_List/hobby_list.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+<!-- 	<filter> -->
+<!-- 		<filter-name>AdminFilter</filter-name> -->
+<!-- 		<filter-class>com.filters.AdminFilter</filter-class> -->
+<!-- 	</filter> -->
+<!-- 	<filter-mapping> -->
+<!-- 		<filter-name>AdminFilter</filter-name> -->
+<!-- 		<url-pattern>/back-end/*</url-pattern> -->
+<!-- 		<dispatcher>REQUEST</dispatcher> -->
+<!-- 		<dispatcher>FORWARD</dispatcher> -->
+<!-- 		<dispatcher>INCLUDE</dispatcher> -->
+<!-- 		<dispatcher>ERROR</dispatcher> -->
+<!-- 		<dispatcher>ASYNC</dispatcher> -->
+<!-- 	</filter-mapping> -->
+	
+	<filter>
+		<filter-name>loginFilter</filter-name>
+		<filter-class>com.filters.LoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>loginFilter</filter-name>
+		<url-pattern>/back-end/member_info/mem_select_page.jsp</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+	  
+  	<filter>
+		<filter-name>ActLevel2Filter</filter-name>
+		<filter-class>com.filters.ActLevel2Filter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ActLevel2Filter</filter-name>
+		<url-pattern>/front-end/acts/manage_join_event.jsp</url-pattern>
+		<url-pattern>/front-end/acts/manage_self_col.jsp</url-pattern>
+		<url-pattern>/front-end/actapl/addActApl.jsp</url-pattern>
+		<url-pattern>/front-end/actcol/addActCol.jsp</url-pattern>
+		<url-pattern>/front-end/actcol/ActColController</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+
+	<filter>
+		<filter-name>ActLevel3Filter</filter-name>
+		<filter-class>com.filters.ActLevel3Filter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ActLevel3Filter</filter-name>
+		<url-pattern>/front-end/acts/manage_own_acts.jsp</url-pattern>
+		<url-pattern>/front-end/acts/addActs.jsp</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+	
+	
+	<filter>
+		<filter-name>MatchFilter</filter-name>
+		<filter-class>com.filters.MatchFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>MatchFilter</filter-name>
+		<url-pattern>/front-end/Match/*</url-pattern>
+		<url-pattern>/front-end/Relationship/relationship.do</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+
+
+	<filter>
+		<filter-name>PostLoginFilter</filter-name>
+		<filter-class>com.filters.PostLoginFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>PostLoginFilter</filter-name>
+		<url-pattern>/front-end/index.jsp</url-pattern>
+		<url-pattern>/front-end/profile/introduction.jsp</url-pattern>
+		<dispatcher>REQUEST</dispatcher>
+		<dispatcher>FORWARD</dispatcher>
+		<dispatcher>INCLUDE</dispatcher>
+		<dispatcher>ERROR</dispatcher>
+		<dispatcher>ASYNC</dispatcher>
+	</filter-mapping>
+	
+
+	<context-param>
+		<param-name>org.apache.tomcat.websocket.textBufferSize</param-name>
+		<param-value>30720000</param-value>
+	</context-param>
+
+</web-app>
